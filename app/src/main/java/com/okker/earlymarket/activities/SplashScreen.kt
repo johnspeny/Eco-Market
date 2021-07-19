@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.okker.earlymarket.MainActivity
 import com.okker.earlymarket.R
 
 class SplashScreen : AppCompatActivity() {
