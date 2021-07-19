@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".activities.LoginActivity">
 
     <LinearLayout
@@ -39,6 +40,8 @@
             android:id="@+id/em_email_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/cutom_input"
             android:inputType="textEmailAddress"
             android:hint="you@domain.com" />
 
@@ -52,6 +55,8 @@
             android:id="@+id/em_password_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/cutom_input"
             android:hint="********"
             android:inputType="textPassword"/>
 
@@ -60,13 +65,15 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:layout_marginTop="30dp"
-            android:text="Forgot your password?"/>
+            android:text="Forgot your password?"
+            android:textColor="@color/cyan_blue" />
 
         <Button
             android:id="@+id/em_submit_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:textColor="@color/em_text_black"
             android:text="Login"/>
 
         <TextView
@@ -87,13 +94,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:background="@color/em_text_light_black"
+            app:backgroundTint="@null"
+            android:textColor="@color/em_text_black"
             android:text="Log in with Google"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="Log in with Facebook"/>
+            android:background="#3B5998"
+            app:backgroundTint="@null"
+            android:text="Log in with Facebook" />
 
         <TextView
             android:layout_width="match_parent"
