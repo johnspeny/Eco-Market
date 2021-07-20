@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/cyan_blue"
+    android:gravity="center"
     tools:context=".activities.SplashScreen">
 
     <ImageView
@@ -14,12 +15,11 @@
         android:src="@drawable/shoppinglogo"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Early Market"
         android:gravity="center"
+        android:textColor="@color/em_text_black"
         android:textSize="40sp"/>
-
-
 
 </LinearLayout>
