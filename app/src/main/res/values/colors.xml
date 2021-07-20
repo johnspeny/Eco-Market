@@ -11,5 +11,7 @@
     <!-- Custom App Colors   -->
     <color name="cyan_blue_light">#BAACDDFE</color>
     <color name="cyan_blue">#FFACDDFE</color>
+    <color name="em_text_light_black">#FFE7EDF1</color>
+    <color name="em_text_black">#FF515151</color>
 
 </resources>
