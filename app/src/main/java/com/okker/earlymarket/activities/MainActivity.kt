@@ -9,10 +9,12 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import com.okker.earlymarket.R
 import com.okker.earlymarket.databinding.ActivityMainBinding
 import com.okker.earlymarket.databinding.AppBarMainBinding
+import com.okker.earlymarket.fragments.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,8 +30,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         b = binding.includeInDrawlayout
+
+        // show toolbar
         setSupportActionBar(b.toolbar1)
 
+
+        // drawer settings
         navigationView = binding.navView
         toggle = ActionBarDrawerToggle(this, binding.drawerLayout, R.string.open, R.string.close)
         binding.drawerLayout.addDrawerListener(toggle)
@@ -45,13 +51,50 @@ class MainActivity : AppCompatActivity() {
         }
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        // click bottom navigation
+        val homeFragment = HomeFragment()
+        val favoriteFragment = FavoriteFragment()
+        val sellFragment = SellFragment()
+        val chatFragment = ChatFragment()
+        val profileFragment = ProfileFragment()
+
+        setCurrentFragment(homeFragment)
+
+        b.bottomNavigation.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.nav_home -> {
+                    setCurrentFragment(homeFragment)
+                }
+
+                R.id.nav_favorites -> {
+                    setCurrentFragment(favoriteFragment)
+                }
+
+                R.id.nav_sell -> {
+                    setCurrentFragment(sellFragment)
+                }
+
+                R.id.nav_chat -> {
+                    setCurrentFragment(chatFragment)
+                }
+
+                R.id.nav_profile -> {
+                    setCurrentFragment(profileFragment)
+                }
+
+            }
+            true
+        }
     }
 
+    // display app bar menu items
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.top_nav_menu, menu)
         return true
     }
 
+    // app bar menu clicks
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(toggle.onOptionsItemSelected(item)){
             return true
@@ -63,7 +106,15 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+    // change fragment
+    private fun setCurrentFragment(fragment: Fragment) =
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.homeF, fragment)
+            commit()
+        }
 
+
+    // Back button to close the app
     private var doubleBackToExitPressedOnce = false
     override fun onBackPressed() {
         if (doubleBackToExitPressedOnce) {
