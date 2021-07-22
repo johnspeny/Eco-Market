@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
     <item android:id="@+id/item1"
-        android:title="item 1"/>
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
 
-    <item android:id="@+id/item2"
-        android:title="item 2"/>
 
-    <item android:id="@+id/item3"
-        android:title="item 3"/>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item android:id="@+id/item6"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Share"/>
+
+            <item android:id="@+id/item7"
+                android:icon="@drawable/ic_baseline_star_rate_24"
+                android:title="Rate Us"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Get help">
+        <menu>
+            <item android:id="@+id/item3"
+                android:icon="@drawable/ic_baseline_settings_24"
+                android:title="Settings"/>
+
+
+            <item android:id="@+id/item5"
+                android:icon="@drawable/ic_baseline_help_outline_24"
+                android:title="Help"/>
+
+        </menu>
+    </item>
 
 </menu>

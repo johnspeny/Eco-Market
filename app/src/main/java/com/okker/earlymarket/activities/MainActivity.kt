@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.item1 -> Toast.makeText(applicationContext, "item 1", Toast.LENGTH_SHORT).show()
-                R.id.item2 -> Toast.makeText(applicationContext, "item 2", Toast.LENGTH_SHORT).show()
                 R.id.item3 -> Toast.makeText(applicationContext, "item 3", Toast.LENGTH_SHORT).show()
             }
             true
