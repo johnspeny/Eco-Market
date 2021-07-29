@@ -1,20 +1,19 @@
-package com.okker.earlymarket.activities
+package com.okker.ecomarket.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
-import com.okker.earlymarket.R
-import com.okker.earlymarket.databinding.ActivityMainBinding
-import com.okker.earlymarket.databinding.AppBarMainBinding
-import com.okker.earlymarket.fragments.*
+import com.okker.ecomarket.R
+import com.okker.ecomarket.databinding.ActivityMainBinding
+import com.okker.ecomarket.databinding.AppBarMainBinding
+import com.okker.ecomarket.fragments.*
 
 class MainActivity : AppCompatActivity() {
 

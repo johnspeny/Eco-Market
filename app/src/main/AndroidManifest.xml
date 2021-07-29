@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.okker.earlymarket">
+    package="com.okker.ecomarket">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,13 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EarlyMarket">
-        <activity android:name=".activities.HotSalesActivity"></activity>
-        <activity android:name=".activities.ProductDetailActivity" />
-        <activity android:name=".activities.ProductListActivity" />
-        <activity android:name=".activities.SignUpActivity" />
-        <activity android:name=".activities.LoginActivity" />
+        <activity android:name="com.okker.ecomarket.activities.HotSalesActivity"></activity>
+        <activity android:name="com.okker.ecomarket.activities.ProductDetailActivity" />
+        <activity android:name="com.okker.ecomarket.activities.ProductListActivity" />
+        <activity android:name="com.okker.ecomarket.activities.SignUpActivity" />
+        <activity android:name="com.okker.ecomarket.activities.LoginActivity" />
         <activity
-            android:name=".activities.SplashScreen"
+            android:name="com.okker.ecomarket.activities.SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity">
+        <activity android:name="com.okker.ecomarket.activities.MainActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->

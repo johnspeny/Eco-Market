@@ -1,12 +1,11 @@
-package com.okker.earlymarket.fragments
+package com.okker.ecomarket.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.okker.earlymarket.R
-import com.okker.earlymarket.databinding.FragmentHomeBinding
+import com.okker.ecomarket.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 

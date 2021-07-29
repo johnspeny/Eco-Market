@@ -1,4 +1,4 @@
-package com.okker.earlymarket
+package com.okker.ecomarket
 
 import org.junit.Test
 

@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Early Market"
+        android:text="Eco Market"
         android:gravity="center"
         android:textColor="@color/em_text_black"
         android:textSize="40sp"/>
