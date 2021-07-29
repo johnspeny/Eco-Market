@@ -1,11 +1,11 @@
-package com.okker.earlymarket.activities
+package com.okker.ecomarket.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.okker.earlymarket.R
+import com.okker.ecomarket.R
 
 class SplashScreen : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
-            startActivity(Intent(this, SignUpActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, _SPLASHTIME)
 

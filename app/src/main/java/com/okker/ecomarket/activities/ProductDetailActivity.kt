@@ -1,12 +1,12 @@
-package com.okker.earlymarket.activities
+package com.okker.ecomarket.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.okker.earlymarket.R
+import com.okker.ecomarket.R
 
-class HotSalesActivity : AppCompatActivity() {
+class ProductDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hot_sales)
+        setContentView(R.layout.activity_product_detail)
     }
 }
